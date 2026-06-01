@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Mandal - Portfolio</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
+
+
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> -->
+  
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">AM</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#blogs" class="nav-link">Blogs</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- <button class="btn btn-primary btn-cta">Get in Touch</button> -->
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text">Akash Mandal</span></h1>
+          <p class="hero-subtitle">Specialist Programmer (L2) @ Infosys | Ex - SDE Intern @ Netmeds | 
+            Sofware Engineer | Competitive Programmer | Open Source Contributor
+
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+            <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-placeholder">
+            <svg width="300" height="300" viewBox="0 0 300 300" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+        
+              <defs>
+                <!-- Gradient for outer circle -->
+                <linearGradient id="grad1" x1="0" y1="0" x2="300" y2="300">
+                  <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#8338ec;stop-opacity:1" />
+                </linearGradient>
+        
+                <!-- Clip path for circular photo -->
+                <clipPath id="circle-clip">
+                  <circle cx="150" cy="150" r="140" />
+                </clipPath>
+              </defs>
+        
+              <!-- Background circle -->
+              <circle cx="150" cy="150" r="140" fill="url(#grad1)" />
+        
+              <!-- Your photo in a circle -->
+              <image
+                href="profile.jpg"
+                x="10" y="10"
+                width="280" height="280"
+                clip-path="url(#circle-clip)"
+                preserveAspectRatio="xMidYMid slice"
+              />
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              Hi, I’m a Mid-Level Software Engineer with 3.5+ years of experience, focused on backend systems, distributed architectures, scalable data platforms, and AI/ML-powered applications.
+              Currently, I work as a Specialist Programmer L2 at Infosys, building and maintaining India’s GSTN platform used by millions of taxpayers.
+              I have experience in both e-commerce and quick commerce as a SDE intern.
+            </p>
+            <p class="about-description">
+              My expertise and area of interest lies in problem-solving, Distributed Systems, Microservice architecture, Storage, Databases, Cache, Big Data, Cloud computing, AI/ML, and designing and implementing scalable systems.  
+              When I’m not coding, you’ll often find me playing, watching, or analyzing football. I’m a competitive programmer. I also enjoy mentoring junior engineers and helping people grow.
+               <!-- I also enjoy mentoring junior engineers and helping people grow. -->
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <div class="highlight-number">Infosys - Top 3%</div>
+                <div class="highlight-label">Platinum Club Member</div>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-number">14M+</div>
+                <div class="highlight-label">Module Owner of Taxpayers </div>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-number">Top 10%</div>
+                <div class="highlight-label">LeetCode Rating</div>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-number">8-10</div>
+                <div class="highlight-label">Team Leadership</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="about-placeholder">
+              <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="400" rx="20" fill="url(#grad2)" opacity="0.1"/>
+                <circle cx="200" cy="180" r="80" fill="url(#grad2)" opacity="0.3"/>
+                <path d="M120 280c0-44.18 35.82-80 80-80s80 35.82 80 80v40H120v-40z" fill="url(#grad2)" opacity="0.3"/>
+                <defs>
+                  <linearGradient id="grad2" x1="0" y1="0" x2="400" y2="400">
+                    <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#8338ec;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <image href="profile.jpg" x="40" y="30" width="320" height="320" preserveAspectRatio="xMidYMid slice"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div id="experienceContainer" class="experience-container"></div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <div id="skillsContainer" class="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div id="projectsContainer" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs-section">
+      <div class="container">
+        <h2 class="section-title">Latest Blogs</h2>
+        <div id="blogsContainer" class="blogs-grid"></div>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+    
+        <div class="education-timeline">
+    
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">
+                Bachelor of Technology - Electronics &amp; Communication Engineering
+              </h3>
+              <p class="timeline-institution">Jalpaiguri Government Engineering College</p>
+              <p class="timeline-date">2018 - 2022</p>
+              <p class="timeline-gpa">CGPA: 8.5/10</p>
+            </div>
+          </div>
+    
+          <!-- Timeline Item 2 (Added) -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">
+                Higher Secondary (Class XII) – Science
+              </h3>
+              <p class="timeline-institution">Indpur Goenka High School</p>
+              <p class="timeline-date">2015 - 2017</p>
+              <p class="timeline-gpa">Percentage: 99%</p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+      <div class="container">
+        <h2 class="section-title">Achievements &amp; Certifications</h2>
+        <div id="certificationsContainer" class="certifications-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:akashmandalam49973@gmail.com" style="font-size: 12px;">
+                  akashmandalam49973@gmail.com
+                </a>
+                
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" style="background:#ffffff; padding:4px; border-radius:4px; display:inline-flex; align-items:center; justify-content:center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2">
+                  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm7.5 0h3.8v2.1h.1c.5-.95 1.75-2.1 3.6-2.1 3.85 0 4.55 2.5 4.55 5.8V24h-4v-7.7c0-1.85 0-4.25-2.6-4.25s-3 2.05-3 4.1V24h-4V8.5z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/iakash-m/" target="_blank">Visit Profile</a>
+              </div>
+            </div>
+            
+            
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p>Bangalore, Karnataka, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Skycoder10" target="_blank" class="social-link" aria-label="GitHub">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://codeforces.com/profile/sky_coder_" target="_blank" class="social-link" aria-label="CodeForces">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-15c0-.828.672-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V12c0-.828.672-1.5 1.5-1.5h3z"/>
+              </svg>
+            </a>
+            <a href="https://leetcode.com/u/sky_coder_/" target="_blank" class="social-link" aria-label="LeetCode">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+            </a>
+            <a href="https://www.codechef.com/users/YOUR_CODECHEF_USERNAME" 
+              target="_blank" 
+              class="social-link" 
+              aria-label="CodeChef Profile">
+              <img 
+                src="https://www.svgrepo.com/show/330182/codechef.svg"
+                alt="CodeChef Hat Logo"
+                class="codechef-icon"
+              />
+            </a>
+            <a href="https://medium.com/@akashmandalam49973" target="_blank" class="social-link" aria-label="Medium">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Akash Mandal. All rights reserved.</p>
+        <p class="footer-tagline">Open to new opportunities and collaborations</p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
