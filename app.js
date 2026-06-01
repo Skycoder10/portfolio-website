@@ -374,19 +374,19 @@ const data = {
           name: "System Design",
           emoji: "🧭",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/graph"  // nodes + edges → system diagrams
+          logo: "https://cdn.simpleicons.org/mermaid"  // diagram tool icon for system design
         },
         {
           name: "Microservices Architecture",
           emoji: "🔀",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/network"  // distributed nodes
+          logo: "https://cdn.simpleicons.org/docker"  // Docker icon for container-based microservice architecture
         },
         {
           name: "REST API Design",
           emoji: "🌐",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/api"  // actual API icon
+          logo: "https://cdn.simpleicons.org/postman"  // Postman icon for REST API design and testing
         },
     
         {
