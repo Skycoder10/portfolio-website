@@ -367,7 +367,7 @@ const data = {
     },
 
     {
-      category: "System Architecture | Engineering Practices",
+      category: "AI | Applied AI |System Architecture | Engineering Practices",
       icon: "🧩",
       items: [
         {
@@ -409,41 +409,41 @@ const data = {
         },
     
         {
-          name: "SOLID Principles",
+          name: "LLM",
           emoji: "🧱",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/structure"  // structured layers = principles
+          logo: "https://cdn.simpleicons.org/openai"  // OpenAI icon for large language models
         },
         {
-          name: "Design Patterns (GoF)",
+          name: "RAG",
           emoji: "📐",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/blueprint"  // blueprint = patterns
+          logo: "https://cdn.simpleicons.org/huggingface"  // Hugging Face icon for retrieval-augmented generation
         },
         {
-          name: "Clean Architecture",
+          name: "Langchain",
           emoji: "🏛️",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/layers"  // concentric layers = perfect fit
+          logo: "https://cdn.simpleicons.org/langchain"  // LangChain icon
         },
         {
-          name: "CQRS",
+          name: "LangGraph",
           emoji: "🎛️",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/splitgate"  // split lanes → command vs query
+          logo: "https://cdn.simpleicons.org/graphql"  // GraphQL icon for graph-oriented workflows
         },
     
         {
-          name: "Code Review Practices",
+          name: "Vector Database",
           emoji: "👀",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/gitlab"  // MR → code review flow symbol
+          logo: "https://cdn.simpleicons.org/pinecone"  // Pinecone icon for vector databases
         },
         {
-          name: "Pair Programming",
+          name: "Semantic Search",
           emoji: "👥",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/teamviewer"  // two users working together
+          logo: "https://cdn.simpleicons.org/elastic"  // Elastic icon for search and semantic retrieval
         },
         {
           name: "Debugging",
