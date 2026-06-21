@@ -493,25 +493,25 @@ const data = {
     {
       id: 1,
       title: "Intelligent Invoice Auditor",
-      emoji: "🧠",
-      description: "AI-powered invoice processing using Azure, OpenAI, and RAG",
-      technologies: ["Python", "Azure", "OpenAI", "RAG", "Angular"],
-      links: { github: "https://github.com/Skycoder10" }
+      emoji: "🧾",
+      description: "AI-powered document intelligence pipeline with a RAG architecture — ChromaDB vector store, semantic chunking, and hybrid retrieval. Improved validation accuracy from 60% to 95% with <4s latency per document; ranked 6th of 294 teams at the STG Makeathon.",
+      technologies: ["Python", "LangChain", "Azure OpenAI", "ChromaDB", "RAG", "Azure Form Recognizer", "FastAPI"]
     },
     {
       id: 2,
-      title: "E-commerce Platform",
+      title: "E-Commerce Store",
       emoji: "🛒",
-      description: "Full-stack e-commerce with authentication and payment integration",
-      technologies: ["React", "Redux", "Node.js", "MongoDB"],
-      links: { github: "https://github.com/Skycoder10" }
+      description: "Full-stack e-commerce web application with separate backend and frontend, product catalog management, image uploads, and cart/checkout flow — deployment-ready (Procfile included).",
+      technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "HTML/CSS"],
+      links: { github: "https://github.com/Skycoder10/Ecommerce_Store" }
     },
     {
       id: 3,
-      title: "GSTN Invoice Management System",
-      emoji: "📊",
-      description: "Large-scale distributed system managing 2.5M invoices with 88% performance improvement",
-      technologies: ["Java", "Kafka", "HBase", "Angular"]
+      title: "File Sharing Web App",
+      emoji: "📁",
+      description: "A reliable file-sharing web app that supports sending any type of file. Node.js backend with EJS-templated views, organized into models, routes, and services for upload and shareable-link generation.",
+      technologies: ["Node.js", "Express", "EJS", "MongoDB", "CSS"],
+      links: { github: "https://github.com/Skycoder10/File-Sharing-Web-App" }
     }
   ],
   blogs: [
