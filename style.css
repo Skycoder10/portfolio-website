@@ -1973,6 +1973,13 @@ section {
     flex-direction: column;
   }
 
+  .hero-buttons .btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
   .about-highlights {
     grid-template-columns: 1fr;
   }
