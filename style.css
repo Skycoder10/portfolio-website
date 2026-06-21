@@ -1081,6 +1081,16 @@ section {
   justify-content: center;
 }
 
+.about-photo {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  display: block;
+}
+
 /* Experience Section */
 .experience-container {
   display: flex;
@@ -1751,6 +1761,23 @@ section {
   line-height: 1.8;
   margin-bottom: var(--space-md);
   font-size: 1.05rem;
+}
+
+.modal-blog-link {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00d4ff, #8338ec);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.modal-blog-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
 }
 
 .modal-metrics {

@@ -3,7 +3,7 @@ const data = {
   experiences: [
     {
       id: 1,
-      title: "Specialist Programmer",
+      title: "Specialist Programmer L2 (Software Engineer II)",
       company: "Infosys",
       location: "Bangalore, Karnataka",
       startDate: "Aug 2022",
@@ -96,48 +96,57 @@ const data = {
         {
           id: 1,
           name: "Invoice Management System (IMS)",
-          description: "Built IMS from scratch in the GST system.",
-          metrics: ["88% faster", "9M users", "30% DB reduction","88% faster", "9M users", "30% DB reduction","88% faster", "9M users", "30% DB reduction"],
+          description: "Architected distributed invoicing platform end-to-end for 14M active taxpayers — 6 microservices, 3 Storm topologies, and Angular frontend on Kubernetes/AWS; led 10-engineer team.",
+          metrics: ["8.5x throughput gain", "14M taxpayers", "2.5M invoices migrated", "<30 min migration"],
           impact: [
-            "Reduced report generation time from 17 hours to 2 hours",
-            "Directly benefiting 9 million taxpayers",
-            "Lowered database load by 30%",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss , have agood day please find your way tot the lgoogh",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss",
-            "IMS Enables coordingation between seller buyer -it is very important for smaller buisnedss"
-
+            "Diagnosed sequential HBase scan bottleneck in GSTR-2B pipeline; redesigned Storm topology with parallel bolt execution and range-partitioned pre-aggregation — cut processing time from 17 hrs to 2 hrs for 9M taxpayers (8.5× throughput gain) with zero data loss.",
+            "Designed Kafka-backed migration pipeline moving 2.5M invoices from HBase to MySQL with transactional consistency and rollback support, completing in <30 min — unblocked 3 downstream reporting features.",
+            "Refactored shared data-access layer across 8 microservices into a unified repository abstraction — reduced DB round-trips by ~25% at 50K+ daily transactions, improving p99 latency by 40 ms on critical invoice-lookup paths.",
+            "Delivered Spring Batch chunk-oriented Excel/JSON report generation for 2.4M invoices per cycle, keeping heap usage flat under sustained load for a 14M-taxpayer base.",
+            "Led 10 engineers through system design, code reviews, and delivery milestones across a distributed multi-service architecture on AWS/K8s."
           ],
-          technologies: ["Java", "Spring Batch", "HBase", "MySQL", "Redis", "Kafka"]
-        }
-        ,
+          technologies: ["Java", "Spring Batch", "HBase", "MySQL", "Redis", "Kafka", "Apache Storm", "Kubernetes", "AWS", "Angular"]
+        },
         {
           id: 2,
-          name: "Table 14 - 15 ",
-          description: "Designed and implemented comprehensive invoice management for GSTN platform",
-          metrics: ["45 components", "2.4M invoices", "14M users"],
-          impact: "Processed $500B+ annual invoice volume, enabling seamless compliance for 14M+ taxpayers",
+          name: "Table 14-15 (E-Commerce Operator Tax Compliance)",
+          description: "Designed e-commerce operator tax-compliance pipelines from scratch — $5B+/month invoice volume across 10M taxpayers with Kafka event ingestion and batch aggregation engine.",
+          metrics: ["$5B+/month volume", "10M taxpayers", "30% DB reduction", "1.2s latency gain"],
+          impact: [
+            "Built Kafka event ingestion pipeline, batch aggregation engine, and idempotent reconciliation logic processing 10M+ records per cycle with fault tolerance and exactly-once delivery semantics.",
+            "Resolved N+1 query anti-pattern via batch fetch with a local aggregation cache — cut DB hits by 30% and reduced auto-population latency from ~8 s to ~6.8 s at peak load.",
+            "Designed pipeline from scratch to handle $5B+/month in e-commerce invoice volume for 10M taxpayers, covering operator-reported supply data under GST compliance requirements.",
+            "Implemented fault-tolerant architecture with replay support and idempotent write semantics — ensuring zero double-counting across multi-cycle reconciliation runs."
+          ],
           technologies: ["Java", "Spring Boot", "Apache Storm", "HBase", "Angular", "Kafka"]
         },
         {
           id: 3,
-          name: "GSTR9 implementation ",
-          description: "High-performance data migration pipeline from HBase to SQL database",
-          metrics: ["2.5M records", "30 minutes", "20% optimization"],
-          impact: "Successfully migrated data maintaining integrity and improving query performance",
-          technologies: ["Java", "HBase", "MySQL", "Apache Camel"]
+          name: "GSTR-9 Annual Return Implementation",
+          description: "Implemented GSTR-9 pipeline — annual reconciliation consolidating 12 months of invoice data for 14M taxpayers with batch-driven Excel/JSON report generation.",
+          metrics: ["2.4M invoices/cycle", "14M taxpayers", "flat heap usage", "annual compliance"],
+          impact: [
+            "Designed GSTR-9 annual return pipeline aggregating 12 months of GSTR-1, GSTR-2B, and ITC ledger data into a reconciled annual return for 14M+ taxpayers.",
+            "Delivered Spring Batch chunk-oriented processing for 2.4M invoice records per generation cycle — maintaining flat heap usage under sustained load using streaming writes.",
+            "Engineered multi-format report output (Excel + JSON) as required by the GSTN portal, enabling offline verification and CA-assisted audit for taxpayers.",
+            "Implemented idempotent reconciliation to handle late amendments and revised returns — ensuring GSTR-9 data consistency across multi-table joins on HBase and MySQL.",
+            "Optimised batch pre-computation for year-end aggregation, reducing peak filing season report generation overhead across the 14M-taxpayer base."
+          ],
+          technologies: ["Java", "Spring Batch", "HBase", "MySQL", "Apache Camel"]
         },
         {
           id: 4,
           name: "Financial Information Provider (FIP) Service",
-          description: "Built FIP service integrating GSTN with Account Aggregator framework",
-          metrics: ["16 AAs", "$500B volume", "12M users"],
-          impact: "Enabled secure sharing of $500B annual invoice data with Account Aggregators",
-          technologies: ["Java", "Spring Boot", "OAuth2", "REST APIs"]
+          description: "Built FIP service from scratch, onboarding GSTN onto India's Account Aggregator network as a certified FIP on the Sahamati portal — serving 12M taxpayers across 16 AAs at <200ms p99.",
+          metrics: ["12M taxpayers", "16 Account Aggregators", "$500B+ annual volume", "<200ms p99"],
+          impact: [
+            "Built FIP service from scratch, becoming a certified FIP on India's Sahamati portal — the first integration of GSTN into the RBI Account Aggregator ecosystem.",
+            "Architected consent lifecycle APIs fully compliant with the RBI AA framework — managing consent creation, revocation, and expiry with tamper-proof audit trails.",
+            "Implemented RBI-compliant encrypted data packaging and zero-PII tokenization — ensuring no taxpayer personal data leaked across AA boundaries.",
+            "Achieved <200 ms p99 latency serving 12M taxpayers across 16 Account Aggregators, covering $500B+ in annual invoice volume.",
+            "Enabled credit access and financial insights for millions of MSMEs by exposing verified GST invoice data as a financial data asset through the AA ecosystem."
+          ],
+          technologies: ["Java", "Spring Boot", "OAuth2", "REST APIs", "Redis", "Kafka"]
         }
       ]
     },
@@ -215,27 +224,39 @@ const data = {
       projects: [
         {
           id: 5,
-          name: "Order Routing Optimization",
-          description: "Optimized backend order routing logic to reduce redundancy",
-          metrics: ["40% redundancy reduction", "2-3 days TTL", "100k orders/day"],
-          impact: "Improved delivery TTL from 3-5 days to 2-3 days, significantly enhancing customer satisfaction",
+          name: "Order Routing Optimization (Trinity Service)",
+          description: "Optimized backend order-routing logic in the Trinity service — eliminated pincode-level redundancy, cutting routing overhead by 40% and order fulfillment time from 3-5 days to 2-3 days.",
+          metrics: ["40% less overhead", "3-5 → 2-3 days TTL", "100K orders/day"],
+          impact: [
+            "Redesigned order-routing logic in the Trinity service to remove pincode-level redundancy in seller-to-customer assignment — reducing routing computation overhead by 40%.",
+            "Cut order fulfillment time from 3-5 days to 2-3 days, directly improving delivery SLAs and customer satisfaction.",
+            "Optimised the routing path to scale cleanly under peak load of ~100K orders/day without added latency."
+          ],
           technologies: ["Java", "Spring Boot", "PostgreSQL", "Redis"]
         },
         {
           id: 6,
-          name: "Change Data Capture (CDC) Implementation",
-          description: "Real-time synchronization between Seller and Inventory databases",
-          metrics: ["Real-time sync", "30% availability", "95% accuracy"],
-          impact: "Achieved 30% improvement in product availability and 95% accurate expiry tracking",
+          name: "Change Data Capture (CDC) Pipeline",
+          description: "Implemented a Kafka-based CDC pipeline for real-time Seller DB / Inventory DB sync — eliminating async staleness behind 30% of inventory-availability errors.",
+          metrics: ["Real-time sync", "30% fewer errors", "Seller ↔ Inventory DB"],
+          impact: [
+            "Built a Kafka + Debezium CDC pipeline streaming changes from the Seller DB to the Inventory DB in real time, replacing stale async batch syncs.",
+            "Eliminated the data-staleness gap responsible for ~30% of inventory-availability errors at checkout.",
+            "Ensured Seller and Inventory databases stayed consistent under high write volume, improving product-availability accuracy on the storefront."
+          ],
           technologies: ["Kafka", "Debezium", "MySQL", "Java"]
         },
         {
           id: 7,
           name: "Test Coverage Enhancement",
-          description: "Expanded test suite with comprehensive unit and integration tests",
-          metrics: ["17% → 80%", "500+ tests", "95% success rate"],
-          impact: "Increased test coverage from 17% to 80%, significantly improving code reliability",
-          technologies: ["JUnit", "Mockito", "Spring Test"]
+          description: "Scaled test coverage from 17% to 80% across the inventory-sync services with unit, integration, and contract-level tests.",
+          metrics: ["17% → 80% coverage", "Unit + Integration + Contract", "CI-gated"],
+          impact: [
+            "Scaled automated test coverage from 17% to 80% across the CDC and inventory-sync services, hardening reliability of critical data flows.",
+            "Added unit, integration, and contract-level tests — catching schema and contract regressions between Seller and Inventory services before production.",
+            "Established a regression safety net that made the real-time sync pipeline safe to evolve and deploy continuously."
+          ],
+          technologies: ["JUnit", "Mockito", "Spring Test", "Pact"]
         }
       ]
     }
@@ -496,59 +517,31 @@ const data = {
   blogs: [
     {
       id: 1,
-      title: "Optimizing Distributed Systems at Scale",
-      date: "Nov 28, 2025",
-      description: "Learn techniques to reduce GSTR-2B generation from 17 hours to 2 hours",
-      content: "In this comprehensive guide, we explore key principles for designing distributed systems. Learn about performance optimization, caching strategies, and real-world implementation. We discuss the techniques used to reduce GSTR-2B report generation from 17 hours to just 2 hours, impacting 9 million taxpayers. Topics include data partitioning, message queue optimization with Apache Kafka, Redis caching, and database indexing strategies."
+      title: "Redis Data Backup Strategy: A Comprehensive Guide",
+      date: "Oct 15, 2025",
+      description: "A deep dive into Redis persistence — RDB snapshots vs. AOF logging — with configuration trade-offs, backup best practices, and disaster-recovery strategies that balance durability with performance.",
+      url: "https://medium.com/@akashmandalam49973/redis-data-backup-strategy-a-comprehensive-guide-c41a11b67589"
     },
     {
       id: 2,
-      title: "System Design Interview Preparation",
-      date: "Nov 25, 2025",
-      description: "Complete guide to preparing for system design interviews",
-      content: "System design interviews are crucial for senior roles. This guide covers scalability, load balancing, database design, caching, and API design patterns. Learn structured approaches to solve design problems and communicate your decisions effectively. We walk through real interview questions and provide frameworks for analysis."
+      title: "Understanding Spring Batch: Key Components and Use Cases",
+      date: "Oct 11, 2024",
+      description: "Breaks down Spring Batch's core building blocks — Jobs, Steps, ItemReaders, ItemProcessors, ItemWriters — and how they fit together for data migration, ETL, reporting, and concurrent batch processing.",
+      url: "https://medium.com/@akashmandalam49973/understanding-spring-batch-key-components-and-use-cases-0b27837a8bf6"
     },
     {
       id: 3,
-      title: "Mastering Go Concurrency Patterns",
-      date: "Nov 20, 2025",
-      description: "Advanced concurrency patterns in Go with goroutines and channels",
-      content: "Go's concurrency model is elegant and powerful. This article explores goroutines, channels, buffered channels, and context management. Learn common patterns like fan-out/fan-in, worker pools, and rate limiting. We analyze real code examples and discuss best practices for avoiding deadlocks and race conditions."
+      title: "Apache Kafka Explained: Architecture and Applications in Modern Data Systems",
+      date: "Oct 10, 2024",
+      description: "Explains Kafka's architecture — brokers, topics, partitions, producers, consumers — and real-world uses from real-time pipelines and IoT to microservices and ML inference, plus integration with Spark/Flink/Hadoop.",
+      url: "https://medium.com/@akashmandalam49973/apache-kafka-explained-architecture-and-applications-in-modern-data-systems-b6e92a9f1675"
     },
     {
       id: 4,
-      title: "Apache Kafka: From Basics to Advanced",
-      date: "Nov 15, 2025",
-      description: "Deep dive into Kafka architecture and real-time streaming",
-      content: "Apache Kafka is a distributed streaming platform powering real-time pipelines. This guide covers architecture, producers, consumers, topic partitioning, and replication. Learn about consumer groups, offset management, and exactly-once semantics. Includes real-world examples from handling $500B annual volumes."
-    },
-    {
-      id: 5,
-      title: "Database Performance Tuning Techniques",
-      date: "Nov 10, 2025",
-      description: "Optimize databases through indexing and query optimization",
-      content: "Database performance is critical for scalable applications. This guide covers query optimization, indexing strategies, and profiling tools. Learn about vertical and horizontal scaling, sharding and replication approaches. Includes case studies of migrating millions of records efficiently."
-    },
-    {
-      id: 6,
-      title: "Microservices Architecture Best Practices",
-      date: "Nov 5, 2025",
-      description: "Building maintainable and scalable microservices",
-      content: "Microservices enable teams to build complex applications at scale. This article covers service decomposition, inter-service communication, data consistency, and resilience patterns. Learn about circuit breakers, retry policies, and monitoring distributed systems."
-    },
-    {
-      id: 7,
-      title: "Competitive Programming Strategies",
-      date: "Oct 28, 2025",
-      description: "Level up problem-solving skills for contests and interviews",
-      content: "Competitive programming sharpens your algorithmic thinking. This guide covers algorithmic techniques, time complexity analysis, and common data structures. Learn about dynamic programming, graph algorithms, and advanced sorting. Based on achieving top 1% on CodeForces."
-    },
-    {
-      id: 8,
-      title: "Building Scalable REST APIs",
-      date: "Oct 20, 2025",
-      description: "Design REST APIs handling millions of requests efficiently",
-      content: "REST APIs are the backbone of modern applications. This guide covers API design principles, versioning, authentication, rate limiting, and caching. Learn error handling, logging, monitoring strategies for production systems."
+      title: "Apache Storm: A Distributed Real-Time Stream Processing System",
+      date: "Oct 12, 2023",
+      description: "Overviews Storm's master-worker model with spouts and bolts, its ability to process millions of tuples/second, fault tolerance, and applications across real-time analytics, ML, and ETL.",
+      url: "https://medium.com/@akashmandalam49973/apache-storm-a-distributed-real-time-stream-processing-system-ac9ec79f7d3c"
     }
   ],
   certifications: [
@@ -563,7 +556,7 @@ const data = {
 
 // State
 let currentBlogPage = 1;
-const blogsPerPage = 3;
+const blogsPerPage = 4;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
@@ -919,10 +912,10 @@ function renderBlogs() {
       <p class="blog-description">${blog.description}</p>
       <span class="blog-read-more" data-blog-id="${blog.id}">Read More →</span>
     `;
-    
+
     container.appendChild(blogDiv);
   });
-  
+
   // Add click handlers
   document.querySelectorAll('.blog-read-more').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -933,7 +926,7 @@ function renderBlogs() {
       }
     });
   });
-  
+
   renderPagination();
 }
 
@@ -1106,9 +1099,10 @@ function openBlogModal(blog) {
   modalBody.innerHTML = `
     <h2 class="modal-blog-title">${blog.title}</h2>
     <div class="modal-blog-date">${blog.date}</div>
-    <p class="modal-blog-content">${blog.content}</p>
+    <p class="modal-blog-content">${blog.description}</p>
+    <a class="modal-blog-link" href="${blog.url}" target="_blank" rel="noopener noreferrer">Read on Medium →</a>
   `;
-  
+
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
