@@ -433,7 +433,7 @@ const data = {
           name: "LLM",
           emoji: "🧱",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/openai"  // OpenAI icon for large language models
+          logo: "https://api.iconify.design/logos/openai-icon.svg"  // OpenAI icon for large language models
         },
         {
           name: "RAG",
@@ -458,7 +458,7 @@ const data = {
           name: "Vector Database",
           emoji: "👀",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/pinecone"  // Pinecone icon for vector databases
+          logo: "https://api.iconify.design/logos/chroma.svg"  // ChromaDB icon for vector databases
         },
         {
           name: "Semantic Search",
@@ -470,7 +470,7 @@ const data = {
           name: "Debugging",
           emoji: "🐞",
           devicon: "",
-          logo: "https://cdn.simpleicons.org/bug"  // accurate bug icon
+          logo: "https://api.iconify.design/mdi/bug.svg?color=%23ef4444"  // red bug icon
         }
       ]
     }
